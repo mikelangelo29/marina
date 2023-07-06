@@ -16,11 +16,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from faro import views as hp_views
+from faro import views 
 
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('homepage/', hp_views.home, name='homepage' )
+    path('', views.home, name='homepage' ),
+    path('turismo/', views.turismo, name='turismo'), 
+    
+    
+    
+    
 ]
