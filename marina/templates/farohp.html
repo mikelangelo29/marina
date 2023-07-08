@@ -3,12 +3,23 @@
 
     <!--CARD GROUP-->
     <div class="container card-group">
-     
+
+        {% load static %}  
+        
         <div class="card">
-            <img src="https://cdn.pixabay.com/photo/2022/05/16/15/25/traffic-7200606_640.jpg" class="card-img-top" alt="...">
+            <img src="https://cdn.pixabay.com/photo/2023/04/05/10/56/writing-7901174_960_720.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">News</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <a href="/news"><button type="button" class="btn btn-outline-primary">Scopri di più</button></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="{% static 'mare.jpeg' %}" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Turismo</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vitae sunt pariatur, dolore dignissimos facere accusantium, aut dolorum libero, ut voluptatem </p>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action. </p>
                 <a href="/turismo"><button type="button" class="btn btn-outline-primary">Scopri di più</button></a>
             </div>
         </div>
@@ -17,7 +28,7 @@
       
 
         <div class="card">
-            <img src="https://cdn.pixabay.com/photo/2023/04/05/10/56/writing-7901174_960_720.jpg"class="card-img-top" alt="...">
+            <img src="{% static 'torre.jpeg' %}" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Cultura-Natura</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -25,7 +36,7 @@
             </div>
         </div>
         <div class="card">
-            <img src="https://cdn.pixabay.com/photo/2022/05/16/15/25/traffic-7200606_640.jpg" class="card-img-top" alt="...">
+            <img src="{% static 'storia.jpg' %}" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Storia</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -33,21 +44,14 @@
             </div>
         </div>
         <div class="card">
-            <img src="https://cdn.pixabay.com/photo/2023/05/04/06/42/winter-7969339__340.jpg" class="card-img-top" alt="...">
+            <img src="{% static 'leone.jpg' %}" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Spazio Scuola</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                 <button type="button" class="btn btn-outline-primary" href="">Scopri di più</button>
             </div>
         </div>
-        <div class="card">
-            <img src="https://cdn.pixabay.com/photo/2023/04/05/10/56/writing-7901174_960_720.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">News</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                <a href="news"><button type="button" class="btn btn-outline-primary">Scopri di più</button></a>
-            </div>
-        </div>
+ 
 
             
 
