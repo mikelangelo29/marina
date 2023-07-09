@@ -3,10 +3,10 @@
 
 
 {% for not in notizie %}
-<div class="card mb-3">
+<div class="container card mb-3">
     <img src="{{ not.immagine.url }}" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">{{not.titolo}}</h5>
+      <h2 class="card-title">{{not.titolo}}</h2>
       <p class="card-text">{{ not.descrizione }}</p>
       <p class="card-text"><small class="text-body-secondary">{{ not.firma }}</small></p>
     </div>
@@ -16,6 +16,6 @@
 
 
 
-
+  {%endfor%}
 
 {%endblock content%}
