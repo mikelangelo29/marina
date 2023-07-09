@@ -7,5 +7,6 @@ class News(models.Model):
     firma= models.CharField(max_length=30, default=None)
     
     
+    
     def __str__(self):
         return self.titolo
