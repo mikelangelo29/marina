@@ -3,13 +3,13 @@
 
 
 {% for not in notizie %}
-<div class="container card mb-3">
+<div class="container card mb-3" style="width: 80%";>
     <img src="{{ not.immagine.url }}" class="card-img-top" alt="...">
     <div class="card-body">
       <h2 class="card-title">{{not.titolo}}</h2>
-      <p class="card-text">{{ not.descrizione }}</p>
+      <p class="card-text" style="text-align: justify;">{{ not.descrizione }}</p>
       <p class="card-text text-end"><small class="text-body-secondary">{{ not.data_creazione |date:"d M Y H m"}}</small></p>
-      <p class="card-text text-end"><class="text-body-secondary-bold">{{ not.firma }}</p>
+      <p class="card-text text-end"><class="text-body-secondary" style="font-style: italic;">{{ not.firma }}</p>
 
     </div>
   </div>
