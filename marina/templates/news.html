@@ -8,7 +8,9 @@
     <div class="card-body">
       <h2 class="card-title">{{not.titolo}}</h2>
       <p class="card-text">{{ not.descrizione }}</p>
-      <p class="card-text"><small class="text-body-secondary">{{ not.firma }}</small></p>
+      <p class="card-text text-end"><small class="text-body-secondary">{{ not.data_creazione |date:"d M Y H m"}}</small></p>
+      <p class="card-text text-end"><class="text-body-secondary-bold">{{ not.firma }}</p>
+
     </div>
   </div>
 
