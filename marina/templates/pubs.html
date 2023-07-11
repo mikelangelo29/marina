@@ -1,0 +1,34 @@
+{%extends 'common.html'%}
+
+{%block content%}
+
+
+<h1 class="text-center">Food&Beverage</h1>
+<!--cards-->
+
+<div class="container mt-5 ">
+    <div class="row">
+        
+        {% for local in pubs %}
+        <div class="col">
+
+            <div class="card" style="width: 18rem;">
+                <img src="{{pub.immagine.url }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h2 class="card-title">{{ local.titolo }}</h2>
+                    <h4 class="card-text text-center">{{ local.descrizione }}</h4>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">{{ local.item1 }}Contatti:</li>
+                </ul>
+                <div class="card-body">
+                    <h5><a href="{{ ostello.sito }}" class="card-link">Sito Web</a></h5>
+                   
+                   
+                </div>
+            </div>
+        </div>
+
+            {% endfor %}
+
+        {%endblock%}
