@@ -1,4 +1,6 @@
 from django.db import models
+from django.urls import reverse
+
 
 class News(models.Model):
     immagine=models.ImageField()
@@ -12,4 +14,5 @@ class News(models.Model):
 
     def __str__(self):
         return self.titolo
+    
     
