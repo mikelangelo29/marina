@@ -3,4 +3,7 @@ from . import views
 
 urlpatterns = [
 path('bandb/', views.hotel, name='b&b'),
+path('pubs/', views.risto, name='pubs')
+
+
 ]
