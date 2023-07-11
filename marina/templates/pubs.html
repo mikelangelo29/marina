@@ -12,20 +12,16 @@
         {% for local in pubs %}
         <div class="col">
 
-            <div class="card" style="width: 18rem;">
-                <img src="{{pub.immagine.url }}" class="card-img-top" alt="...">
+            <div class="card my-4" style="width: 18rem">
+                <img src="{{ local.immagine.url }}" class="card-img-top " style="max-height: 12rem;" alt="...">
                 <div class="card-body">
                     <h2 class="card-title">{{ local.titolo }}</h2>
-                    <h4 class="card-text text-center">{{ local.descrizione }}</h4>
+                    <p class="card-text text-center" style="font-size: 15pt;">{{ local.descrizione }}</p>
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">{{ local.item1 }}Contatti:</li>
+                    <li class="list-group-item" ;>CONTATTI:{{ local.item1 }}</li>
                 </ul>
-                <div class="card-body">
-                    <h5><a href="{{ ostello.sito }}" class="card-link">Sito Web</a></h5>
-                   
-                   
-                </div>
+                
             </div>
         </div>
 
