@@ -3,8 +3,8 @@
 
 
 {% for not in notizie %}
-<div class="container card mb-3" style="width: 80%";>
-    <img src="{{ not.immagine.url }}" class="card-img-top" alt="...">
+<div class="container card mb-5" style="width: 80%";>
+    <img src="{{ not.immagine.url }}" class="card-img-top" style="max-height: 450px;" alt="...">
     <div class="card-body">
       <h2 class="card-title">{{not.titolo}}</h2>
       <p class="card-text" style="text-align: justify;">{{ not.descrizione }}</p>
