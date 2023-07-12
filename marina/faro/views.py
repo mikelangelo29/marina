@@ -11,6 +11,9 @@ def home (request):
 def turismo (request):
     return render (request, 'turismo.html')
 
+def storia (request):
+    return render (request, "storiahp.html")
+
 def search (request):
     if 'q' in request.GET and request.GET ['q']:
         q= request.GET ['q']

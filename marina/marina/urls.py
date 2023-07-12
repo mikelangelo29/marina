@@ -28,6 +28,7 @@ urlpatterns = [
     path('turismo/', views.turismo, name='turismo'),
     path('tourism/', include('tourism.urls')), 
     path('news/', include ('news.urls')),
-    path ('search/', views.search, name='cerca'),
+    path('search/', views.search, name='cerca'),
+    path('storia/', views.storia, name='storia')
     
 ] + static (settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
