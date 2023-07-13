@@ -14,6 +14,14 @@ def turismo (request):
 def storia (request):
     return render (request, "storiahp.html")
 
+def storia1 (request):
+    return render (request, "storia_bonifica.html")
+
+def storia2 (request):
+    return render (request, "storia_insed.html")
+
+
+
 def search (request):
     if 'q' in request.GET and request.GET ['q']:
         q= request.GET ['q']

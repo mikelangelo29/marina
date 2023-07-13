@@ -1,31 +1,33 @@
 {%extends 'common.html'%}
 
 {%block content%}
+
+{% load static %}
     <!--CARD GROUP-->
     <div class="container card-group">
         <div class="card">
-            <img src="https://cdn.pixabay.com/photo/2023/05/11/11/05/glass-sphere-7986102__340.jpg" class="card-img-top img-fluid" alt="...">
+            <img src="{% static 'stornara2.jpg' %}" class="card-img-top img-fluid" style="height: 180px;" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Anni '50</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                <button type="button" class="btn btn-outline-primary">Scopri di più</button>
+                <h5 class="card-title">La bonifica della Stornara</h5>
+                <p class="card-text">Senza la dura quanto grande opera di uomini ex-combattenti della Grande Guerra, Ginosa Marina non esisterebbe neanche. Qualche ricordo di quei tempi</p>
+                <p class="card-text"><small class="text-body-secondary">FOTO: cantiere ONC in attività</small></p>
+                <a href="{% url 'stornara' %}"><button type="button" class="btn btn-outline-primary">Scopri di più</button></a>
             </div>
         </div>
         <div class="card">
-            <img src="https://cdn.pixabay.com/photo/2023/04/20/09/54/pecan-nuts-7939326_960_720.jpg" class="card-img-top" alt="...">
+            <img src="{% static 'galvan.jpg' %}" class="card-img-top" style="max-height: 180px"; alt="...">
             <div class="card-body">
-                <h5 class="card-title">Anni '60</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                <button type="button" class="btn btn-outline-primary">Scopri di più</button>
+                <h5 class="card-title">I primi insediamenti</h5>
+                <p class="card-text">Era la fine della guerra. I primi coloni, per la quasi totalità di Ginosa, tornavano a lavoravano le terre assegnate loro. Era passato quasi un trentennio... </p>
+                <p class="card-text"><small class="text-body-secondary">FOTO: Rino Galvan, il primo colono di Ginosa Marina</small></p>
+                <a href="{%url 'insediamenti'%}"><button type="button" class="btn btn-outline-primary">Scopri di più</button></a>
             </div>
         </div>
         <div class="card">
             <img src="https://cdn.pixabay.com/photo/2023/04/03/03/20/plant-7895897__340.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Anni '70</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <h5 class="card-title">Gli anni 50-60</h5>
+                <p class="card-text">Sono passati trent'anni dall'inizio dell'opera di bonifica, la guerra è appena finita...ead-in to additional content. This content is a little bit longer.</p>
                 <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                 <button type="button" class="btn btn-outline-primary">Scopri di più</button>
             </div>
@@ -42,7 +44,7 @@
         <div class="card">
             <img src="https://cdn.pixabay.com/photo/2023/05/07/20/36/network-7977087_640.jpg" class="card-img-top img-fluid" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Anni '90</h5>
+                <h5 class="card-title">Bibliografia</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                 <button type="button" class="btn btn-outline-primary">Scopri di più</button>
