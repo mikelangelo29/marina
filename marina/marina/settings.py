@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'faro',
     'tourism',
     'news',
+    'personaggi',
 
     
 ]

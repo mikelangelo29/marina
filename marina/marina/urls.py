@@ -22,6 +22,7 @@ from django.conf import settings
 
 
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='homepage' ),
@@ -32,6 +33,7 @@ urlpatterns = [
     path('storia/', views.storia, name='storia'),
     path('bonifica/', views.storia1, name='stornara'),
     path('insediamenti/', views.storia2, name='insediamenti'),
+    path('personaggi/', include ('personaggi.urls')),
 
     
 ] + static (settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

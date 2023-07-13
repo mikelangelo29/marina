@@ -17,7 +17,7 @@
         <div class="card">
             <img src="{% static 'galvan.jpg' %}" class="card-img-top" style="max-height: 180px"; alt="...">
             <div class="card-body">
-                <h5 class="card-title">I primi insediamenti</h5>
+                <h5 class="card-title">I primi insediamenti</h5> <br>
                 <p class="card-text">Era la fine della guerra. I primi coloni, per la quasi totalità di Ginosa, tornavano a lavoravano le terre assegnate loro. Era passato quasi un trentennio... </p>
                 <p class="card-text"><small class="text-body-secondary">FOTO: Rino Galvan, il primo colono di Ginosa Marina</small></p>
                 <a href="{%url 'insediamenti'%}"><button type="button" class="btn btn-outline-primary">Scopri di più</button></a>
@@ -35,10 +35,10 @@
         <div class="card">
             <img src="https://cdn.pixabay.com/photo/2023/05/13/17/00/door-7990935__340.jpg" class="card-img-top img-fluid" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Anni'80</h5>
+                <h5 class="card-title">Personaggi</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                <button type="button" class="btn btn-outline-primary">Scopri di più</button>
+                <a href="{% url 'personaggi' %}"> <button type="button" class="btn btn-outline-primary">Scopri di più</button></a>
             </div>
         </div>
         <div class="card">
