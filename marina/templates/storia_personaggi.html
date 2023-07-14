@@ -7,14 +7,14 @@
 <!--cards-->
 
 
-
-<div class="container mt-5 ">
+<div class="container mt-5">
     <div class="row">
         
-        {% for psto in per %}
-        <div class="col-4">
+      
+{% for psto in per %}  
+        <div class="col-lg-4">
 
-            <div class="card my-4" style="width: 18rem;">
+            <div class="card my-4 " style="width: 18rem;">
                 <img src="{{ psto.immagine.url }}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h2 class="card-title">{{ psto.titolo }}</h2>
@@ -26,6 +26,7 @@
                 
             </div>
         </div>
+  
 
         {% endfor %}
 
