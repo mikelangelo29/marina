@@ -21,6 +21,8 @@ def storia2 (request):
     return render (request, "storia_insed.html")
 
 
+def biblio (request):
+    return render (request, "storia_biblio.html")
 
 def search (request):
     if 'q' in request.GET and request.GET ['q']:

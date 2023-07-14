@@ -34,6 +34,6 @@ urlpatterns = [
     path('bonifica/', views.storia1, name='stornara'),
     path('insediamenti/', views.storia2, name='insediamenti'),
     path('personaggi/', include ('personaggi.urls')),
-
+    path('biblio/', views.biblio, name='biblio'),
     
 ] + static (settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
