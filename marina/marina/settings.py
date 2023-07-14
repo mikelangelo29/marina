@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'tourism',
     'news',
     'personaggi',
+    'natura',
 
     
 ]

@@ -35,5 +35,6 @@ urlpatterns = [
     path('insediamenti/', views.storia2, name='insediamenti'),
     path('personaggi/', include ('personaggi.urls')),
     path('biblio/', views.biblio, name='biblio'),
+    path('natura/', include('natura.urls')),
     
 ] + static (settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
