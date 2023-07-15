@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'news',
     'personaggi',
     'natura',
+    'cinquanta',
 
     
 ]

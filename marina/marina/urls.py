@@ -36,5 +36,6 @@ urlpatterns = [
     path('personaggi/', include ('personaggi.urls')),
     path('biblio/', views.biblio, name='biblio'),
     path('natura/', include('natura.urls')),
+    path('50_60/', include('cinquanta.urls')),
     
 ] + static (settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
