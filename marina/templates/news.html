@@ -2,22 +2,73 @@
 {%block content%}
 
 
-{% for not in notizie %}
-<div class="container card mb-5" style="width: 80%";>
-    <img src="{{ not.immagine.url }}" class="card-img-top" style="max-height: 450px;" alt="...">
-    <div class="card-body">
-      <h2 class="card-title">{{not.titolo}}</h2>
-      <p class="card-text" style="text-align: justify;">{{ not.descrizione|linebreaks }}</p>
-      <p class="card-text text-end"><small class="text-body-secondary">{{ not.data_creazione |date:"d M Y H m"}}</small></p>
-      <p class="card-text text-end" style="font-style: italic;">{{ not.firma }}</p>
+{% comment %} <div class="container mt-5 ">
+  <div class="row"> {% endcomment %}
 
+
+{% for not in notizie %}
+
+<div class="container card mb-3" style="max-width: 840px;">
+  <div class="container row g-0">
+    <div class="col-md-12">
+      <img src="{{not.immagine.url}}"style="height:300px; width:420px" alt="...">
+    </div>
+    <div class="col-md-10">
+      <div class="card-body"> 
+        <h5 class="card-title">{{not.titolo}}</h5>
+        <p style= "text-align: justify" class="card-text" >{{not.descrizione|linebreaks }}</p>
+        <p class="card-text"><small class="text-body-secondary">{{ not.data_creazione |date:"d M Y H m"}}</small></p>
+        <p class="card-text text-end" style="font-style: italic;">{{ not.firma }}</p>
+      </div>
     </div>
   </div>
+</div>
+
+
+
+
+
+  {% comment %} <div class=" col">
+    
+    <div class="container card my-4" style="width: 18rem">
+        <img src="{{ not.immagine.url }}" class="card-img-top " style="max-height: 12rem;" alt="...">
+        <div class="container card-body">
+            <h2 class="card-title">{{ not.titolo }}</h2>
+            <p class="card-text text-center" style="font-size: 15pt;">{{ not.descrizione|linebreaks }}</p>
+            <p class="card-text text-end"><small class="text-body-secondary">{{ not.data_creazione |date:"d M Y H m"}}</small></p>
+            <p class="card-text text-end" style="font-style: italic;">{{ not.firma }}</p>
+        
+      
+        </div>
+    </div>
+</div> {% endcomment %}
+
+{%endfor%}
+
+
+{%endblock%}
+
+
+
+      
+  
+      {% comment %} <div class="col">
+
+          <div class="card my-4" style="width: 18rem">
+              <img src="{{ nat.immagine.url }}" class="card-img-top " style="max-height: 12rem;" alt="...">
+              <div class="card-body">
+                  <h2 class="card-title">{{ nat.titolo }}</h2>
+                  <p class="card-text text-center" style="font-size: 15pt;">{{ nat.descrizione }}</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item" ;>{{ nat.item1 }}</li>
+              </ul>
+              
+          </div>
+      </div>
+
+
+
 
   
-
-
-
-  {%endfor%}
-
-{%endblock content%}
+ {% endcomment %}
